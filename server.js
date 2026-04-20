@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const API_KEY = "eed5327d20c86281196fc2a77baaf5f6";
+const API_KEY = process.env.SMM_API_KEY;
 const API_URL = "https://smmwiz.com/api/v2";
 
 // Test route
